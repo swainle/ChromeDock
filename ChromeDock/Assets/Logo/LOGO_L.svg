@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 256 256" role="img" aria-label="ChromeDock logo">
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="0.8" y2="1">
+      <stop stop-color="#454545"/>
+      <stop offset="1" stop-color="#232323"/>
+    </linearGradient>
+    <linearGradient id="disk" x1="0.1" y1="0" x2="0.85" y2="1">
+      <stop stop-color="#9bc8e9"/>
+      <stop offset="0.55" stop-color="#427fbc"/>
+      <stop offset="1" stop-color="#195caa"/>
+    </linearGradient>
+    <linearGradient id="leftFacet" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#b9def5"/>
+      <stop offset="1" stop-color="#2877c8"/>
+    </linearGradient>
+    <linearGradient id="rightFacet" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d5edfc"/>
+      <stop offset="1" stop-color="#74aee0"/>
+    </linearGradient>
+    <linearGradient id="lens" x1="0" y1="0" x2="0.6" y2="1">
+      <stop stop-color="#b8dafa"/>
+      <stop offset="0.5" stop-color="#6fa7dd"/>
+      <stop offset="1" stop-color="#2871c1"/>
+    </linearGradient>
+    <radialGradient id="lensLight" cx="45%" cy="8%" r="85%">
+      <stop stop-color="#d6eafa" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#d6eafa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <clipPath id="diskClip"><circle cx="128" cy="117" r="83"/></clipPath>
+  </defs>
+  <rect x="8" y="14" width="240" height="232" rx="59" fill="#000" opacity="0.7" filter="url(#shadow)"/>
+  <rect x="8" y="3" width="240" height="232" rx="59" fill="#111"/>
+  <rect x="12" y="7" width="232" height="224" rx="56" fill="url(#shell)" stroke="#505050" stroke-width="1"/>
+  <g clip-path="url(#diskClip)">
+    <circle cx="128" cy="117" r="83" fill="url(#disk)"/>
+    <path d="M 58,72 106,150 118,200 42,200 42,79 Z" fill="url(#leftFacet)"/>
+    <path d="M 106,34 159,34 211,83 115,83 91,45 Z" fill="#b9d9ee" opacity="0.25"/>
+    <path d="M 154,82 H 214 V 205 H 119 L 159,119 Z" fill="url(#rightFacet)"/>
+    <path d="M 119,200 159,119 159,82 211,82 211,200 Z" fill="#a9d5f3" opacity="0.25"/>
+  </g>
+  <circle cx="128" cy="117" r="36" fill="#f4f8fc"/>
+  <circle cx="128" cy="117" r="30.5" fill="url(#lens)"/>
+  <circle cx="128" cy="111" r="29" fill="url(#lensLight)"/>
+  <circle cx="128" cy="117" r="29" fill="none" stroke="#c8e3f7" stroke-opacity="0.55" stroke-width="1.5"/>
+</svg>
